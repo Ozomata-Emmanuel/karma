@@ -38,41 +38,48 @@
 
 
 
-.nav_back{
+.nav_back {
   background-image: url(images/home_images/banner-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 635px;
-  position: relative;
+  /* position: relative; */
+  margin-top: 00px; 
 }
 
 .nav_back img{
   width: 100%;
 }
 
-nav{
-  width: 88%;
-  margin: auto;
-  cursor: pointer;
-  z-index: 1000;
+nav {
+  width: 100%;
   position: sticky;
-  top: 0px;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  margin: -00px auto;
+  position: absolute; 
+  top: 30px;
 }
 
-.nav{
+.nav {
   width: 88%;
+  margin: auto;
   background-color: white;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.116);
-  position: absolute;
-  z-index: 200;
   display: flex;
   align-items: center;
-  margin: 40px auto;
   justify-content: space-between;
   padding: 13px 45px;
+  transition: all 0.3s ease;
+}
+
+.nav.scrolled-top {
+  width: 100%;
+  margin:  auto 0;
   position: fixed;
-  top: 0px;
+  top: 0;
 }
 
 .nav_left{
